@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vallen Drama</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-[#fff5fa] text-gray-800">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-pink-400 to-pink-500 shadow-md">
+    <div class="flex items-center justify-between px-4 py-3 text-white">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-heart text-xl"></i>
+        <h1 class="text-xl font-semibold tracking-wide">Vallen Drama</h1>
+      </div>
+      <i class="fa-solid fa-magnifying-glass cursor-pointer" onclick="navigate('search')"></i>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="app" class="pt-20 pb-24 px-4"></main>
+
+  <!-- BOTTOM NAV -->
+  <nav class="fixed bottom-0 left-0 w-full bg-white shadow-inner border-t flex justify-around py-2 text-sm">
+    <button onclick="navigate('home')" class="nav-btn active"><i class="fa fa-home"></i><span>Home</span></button>
+    <button onclick="navigate('search')" class="nav-btn"><i class="fa fa-search"></i><span>Search</span></button>
+    <button onclick="navigate('history')" class="nav-btn"><i class="fa fa-clock"></i><span>History</span></button>
+    <button onclick="navigate('favorite')" class="nav-btn"><i class="fa fa-heart"></i><span>Favorit</span></button>
+    <button onclick="navigate('profile')" class="nav-btn"><i class="fa fa-user"></i><span>Profil</span></button>
+  </nav>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/stream.js"></script>
+  <script src="assets/js/history.js"></script>
+  <script src="assets/js/favorite.js"></script>
+  <script src="assets/js/profile.js"></script>
+
+</body>
+</html>
